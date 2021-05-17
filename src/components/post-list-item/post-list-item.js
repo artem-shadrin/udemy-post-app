@@ -9,8 +9,7 @@ const PostListItem = ({ label, important }) => {
   if (star) classNames += ' important';
   if (like) classNames += ' like'
   return (
-    <div className={classNames}
-    >
+    <div className={classNames}>
       <span className="app-list-item-label"
         onClick={() => setLike(!like)}>
         {label}
