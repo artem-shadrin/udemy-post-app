@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
-import AppHeader from '../app-header';
-import SearchPanel from '../search-panel';
-import PostStatusFilter from '../post-status-filter';
-import PostList from '../post-list';
-import PostAddForm from '../post-add-form';
+import AppHeader from '../app-header/index.jsx';
+import SearchPanel from '../search-panel/index.jsx';
+import PostStatusFilter from '../post-status-filter/index.jsx';
+import PostList from '../post-list/index.jsx';
+import PostAddForm from '../post-add-form/index.jsx';
 
 import './app.css';
 
 const App = () => {
   const [data, setData] = useState([
     { id: 1, label: "Lorem ipsum dolor sit amet.", important: true, like: false },
-    { id: 2, label: "Lorem ipsum dolor sit amet consectetur.", important: false, like: false },
+    { id: 2, label: "Lorem ipsum dolor sit amet consectetur.", important: false, like: true },
     { id: 3, label: "Lorem, ipsum dolor.", important: false, like: false }
   ])
   const [maxId, setMaxId] = useState(data.length + 1);

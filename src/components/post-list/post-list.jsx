@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PostListItem from '../post-list-item';
+import PostListItem from '../post-list-item/index.jsx';
 import './post-list.css';
 
 const PostList = ({ posts, onDelete, onLike, onImportant }) => {
